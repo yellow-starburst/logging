@@ -1,0 +1,16 @@
+nano ~/.bashrc
+PS1='[`date  +"%b-%d-%y %T"`] > '
+
+
+test "$(ps -ocommand= -p $PPID | awk '{print $1}')" == 'script' || (script -f $HOME/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)
+
+apt-get install aha -y
+ls ~/.msf4
+mkdir ~/.msf4
+echo "spool /root/metasploit.log" > ~/.msf4/msfconsole.rc
+echo "setg prompt [%T] %L" >> ~/.msf4/msfconsole.rc
+echo setg PromptTimeFormat %m/%d/%Y %H:%M >> ~/.msf4/msfconsole.rc
+echo "setg ConsoleLogging true" >> ~/.msf4/msfconsole.rc
+echo "setg LogLevel 5" >> ~/.msf4/msfconsole.rc
+echo "setg SessionLogging true" >> ~/.msf4/msfconsole.rc
+echo "setg TimestampOutput true" >> ~/.msf4/msfconsole.rc
