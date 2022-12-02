@@ -20,16 +20,16 @@ Location = C:\Users\xyz\Documents\WindowsPowerShell
 
 ```
 function prompt { "PS " + "$env:UserName" + "@$env:COMPUTERNAME\" + (Get-Item -Path ".\" -Verbose).name + " " + ($(Get-Date).toString("MM/dd/yyyy hh:mm:ss")) + ">" }
-Start-Transcript -OutputDirectory ~\Documents\1_logs\
+Start-Transcript -OutputDirectory $HOME\Documents\1_logs\
 ```
 
 
 If you are lazy:
 
 ```
-mkdir ~\Documents\1_logs\
+mkdir $HOME\Documents\1_logs\
 echo 'function prompt { "PS " + "$env:UserName" + "@$env:COMPUTERNAME\" + (Get-Item -Path ".\" -Verbose).name + " " + ($(Get-Date).toString("MM/dd/yyyy hh:mm:ss")) + ">" }' > ~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
-echo "Start-Transcript -OutputDirectory ~\Documents\1_logs\" >> ~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+echo "Start-Transcript -OutputDirectory $HOME\Documents\1_logs\" >> ~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 
 
 ```
