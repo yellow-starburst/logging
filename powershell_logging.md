@@ -27,6 +27,7 @@ Start-Transcript -OutputDirectory $HOME\Documents\1_logs\
 If you are lazy:
 
 ```
+New-Item –Path $Profile –Type File –Force
 mkdir $HOME\Documents\1_logs\
 echo 'function prompt { "PS " + "$env:UserName" + "@$env:COMPUTERNAME\" + (Get-Item -Path ".\" -Verbose).name + " " + ($(Get-Date).toString("MM/dd/yyyy hh:mm:ss")) + ">" }' > ~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 echo "Start-Transcript -OutputDirectory $HOME\Documents\1_logs\" >> ~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
