@@ -1,4 +1,4 @@
-#Linux logging
+# Linux logging
 
 
 # Time Stamping the Terminal
