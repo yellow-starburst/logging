@@ -129,6 +129,14 @@ Trivy
 apt-get install trivy
 ```
 
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 
 ## Old-way Tool Download
 
