@@ -30,8 +30,8 @@ Notes
 
 ## Basic tool updates
 ```
-apt-get update
-apt-get dist-upgrade
+sudo apt-get update
+sudo apt-get dist-upgrade
 ```
 
 ## Tool Install
