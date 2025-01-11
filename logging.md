@@ -14,11 +14,17 @@ PROMPT=$'%F{%(#.blue.green)}┌──${debian_chroot:+($debian_chroot)─}${VIRT
 ```
 
 Step 3. sync terminal
-`source ~/.zshrc`
+```
+source ~/.zshrc
+```
 
 ## Option 2.Modify bashrc 
-`nano ~/.bashrc` 
-Find the last PS1 text file and replace it with this: 
+Step 1. Modify bashrc
+```
+nano ~/.bashrc 
+```
+Step 2. Find the last PS1 text file and replace it with this: 
+
 ```
 PS1='[`date  +"%b-%d-%y %T"`] > '
 ```
@@ -36,10 +42,21 @@ test "$(ps -ocommand= -p $PPID | awk '{print $1}')" == 'script' || (script -f $H
 ```
 
 Step 3. Install this tool - it is useful to convert the log file to readable text
-`apt-get install aha -y`
+```
+apt-get install aha -y
+```
 
 
 ## Option 2. Putty Logging
+
+![image](https://github.com/user-attachments/assets/cc9b2663-d49e-409b-ab8a-6c7492563f44)
+
+Step 0. Edit the correct profile
+Step 1. Go to Session > Logging
+Step 2. Select all session output
+Step 3. Select desired folder and file name
+Step 4. Select Always append to end of it
+Step 5. Deselect flush log file frequently and Omit fields. Select "Include Header"
 
 
 ## Specific tool logging - Metasploit
