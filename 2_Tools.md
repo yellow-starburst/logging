@@ -12,7 +12,7 @@
 
 `passwd kali`
 
-4. Change root password
+2. Change root password
 
 `passwd root`
 
