@@ -2,7 +2,7 @@
 
 &nbsp;
 &nbsp;
-# Time Stamping the Terminal
+# 1. Time Stamping the Terminal
 ## Option 1. Modify ZSH - great for kali
 Step 1. Edit zhrc file
 `nano ~/.zshrc`
@@ -35,7 +35,7 @@ PS1='[`date  +"%b-%d-%y %T"`] > '
 &nbsp;
 &nbsp;
 
-# Logging terminal input/output
+# 2. Logging terminal input/output
 
 ## Option 1. Script 
 Problem - It needs a program like "aha" to convert the log files to readable text. 
@@ -66,7 +66,7 @@ Step 5. Deselect flush log file frequently and Omit fields. Select "Include Head
 
 &nbsp;
 &nbsp;
-## Specific tool logging - Metasploit
+# 3. Specific tool logging - Metasploit
 
 Step 1. Check if this folder exists.
 `ls ~/.msf4` 
