@@ -1,12 +1,23 @@
 
 
-<h1 align="center">Install Tools</h1>
-
 # 1. Change hostname
 1. `sudo nano /etc/hostname`
 2. `sudo nano /etc/hosts`
 3. `sudo systemctl restart systemd-hostnamed`
 
+
+# 2. Change Password
+
+1. Change username 
+`passwd kali`
+
+2. Change root password
+
+`passwd root`
+
+
+
+<h1 align="center">Install Tools</h1>
 
 
 # 2. Initial
@@ -68,12 +79,15 @@ git clone https://github.com/RhinoSecurityLabs/pacu.git "/opt/$(basename -s .git
 ```
 git clone  https://github.com/prowler-cloud/prowler "/opt/$(basename -s .git https://github.com/prowler-cloud/prowler)"
 cd prowler
-apt-get install poetry
 poetry install
 poetry shell
 
 ```
 
 
-3. 
-4. 
+3. cloudsploit
+
+4. cloudfox
+
+
+5. ScoutSuite
