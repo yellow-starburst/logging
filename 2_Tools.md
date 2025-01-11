@@ -63,18 +63,17 @@ source venv/bin/activate
 ```
 
 2. Poetry
-
+To run python files prepend `poetry run` to the command
 ```
 poetry install
 poetry shell
 ```
-To run python files prepend `poetry run` to the command
 
 
 3. Pipx - easiest
-
+Keep in mind that you should keep track of the command to run the tool. Like for scoutsuite its "scout".
 ```
-
+pipx install toolxyz
 ```
 
 # AWS Pentest Tools
@@ -96,6 +95,7 @@ pipx install pacu
 pipx install prowler
 pipx install cloudsploit
 pipx install ScoutSuite
+pipx install trufflehog
 ```
 
 
@@ -105,6 +105,16 @@ pipx install ScoutSuite
 Step 2. Activate Tools 
 
 Step 3. Intall missing tools
+
+1. CloudFox
+2. Gitleaks
+3. Microburst
+4. Azure_hound and bloodhound
+5. roadrecon - I'm not a big fan
+6. o365enum
+7. Scubagear - from cisa
+8. CrowdStrike Reporting Tool for Azure (CRT)
+
 
 CloudFox
 
@@ -146,10 +156,4 @@ poetry shell
 poetry run python prowler.py -v
 ```
 
-
-3. cloudsploit
-
-4. cloudfox
-
-
-5. ScoutSuite
+3. Etc. 
