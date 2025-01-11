@@ -1,3 +1,5 @@
+#Linux logging
+
 
 # Time Stamping the Terminal
 ## Option 1. Modify ZSH - great for kali
