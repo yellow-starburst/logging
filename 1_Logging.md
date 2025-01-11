@@ -65,10 +65,15 @@ apt-get install aha -y
 ![image](https://github.com/user-attachments/assets/cc9b2663-d49e-409b-ab8a-6c7492563f44)
 
 Step 0. Edit the correct profile
+
 Step 1. Go to Session > Logging
+
 Step 2. Select all session output
+
 Step 3. Select desired folder and file name
+
 Step 4. Select Always append to end of it
+
 Step 5. Deselect flush log file frequently and Omit fields. Select "Include Header"
 
 &nbsp;
