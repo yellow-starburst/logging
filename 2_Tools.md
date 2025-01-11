@@ -106,6 +106,8 @@ Step 2. Activate Tools
 
 Step 3. Intall missing tools
 
+<h2 align="center">Step 3. Intall missing tools</h2>
+
 1. CloudFox
 2. Gitleaks
 3. Microburst
