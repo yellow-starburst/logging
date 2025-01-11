@@ -102,23 +102,18 @@ pipx install trufflehog
 
 
 
-Step 2. Activate Tools 
+Step 2. Verfiy Tools 
 
-Step 3. Intall missing tools
 
-<h2 align="center">Step 3. Intall missing tools</h2>
+<h2 align="center"> Intall missing tools</h2>
 
 1. CloudFox
 2. Gitleaks
 3. Microburst
-4. Azure_hound and bloodhound
-5. roadrecon - I'm not a big fan
-6. o365enum
-7. Scubagear - from cisa
-8. CrowdStrike Reporting Tool for Azure (CRT)
 
 
-CloudFox
+
+1. CloudFox
 
 ```
 git clone  https://github.com/BishopFox/cloudfox.git "/opt/$(basename -s .git https://github.com/BishopFox/cloudfox.git)"
@@ -126,10 +121,31 @@ cd cloudfox
 go build .
 ```
 
-Trivy
+
+2. Gitleaks
+
+```
+sudo apt-get install gitleaks
+```
+
+
+
+
+3. Trivy
 ```
 apt-get install trivy
 ```
+
+
+<h2 align="center"> Intall windows tools</h2>
+
+1. Azure_hound and bloodhound
+2. roadrecon - I'm not a big fan
+3. o365enum
+4. Scubagear - from cisa
+5. CrowdStrike Reporting Tool for Azure (CRT)
+6. AzureADRecon
+
 
 <br>
 <br>
