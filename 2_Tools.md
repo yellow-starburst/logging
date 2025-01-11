@@ -21,8 +21,12 @@
 <h1 align="center">Install Tools</h1>
 
 
-# 2. Initial
-note - make sure you are careful what user you are running as. If you run as root, it will break the python tools. 
+# 1. Initial
+
+Notes
+1. Make sure you are careful what user you are running as. If you run as root, it will break the python tools.
+2. Be careful installing python based tools. Ideally you should install in a sandbox.  
+
 
 ## Basic tool updates
 ```
