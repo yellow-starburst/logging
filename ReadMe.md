@@ -4,6 +4,7 @@
 &nbsp;
 # 1. Time Stamping the Terminal
 ## Option 1. Modify ZSH - great for kali
+Note - Keep in mind you would have to run this works for 1 specific user. So you likely want to set it up for the desired user and for the root user.
 Step 1. Edit zhrc file
 `nano ~/.zshrc`
 
