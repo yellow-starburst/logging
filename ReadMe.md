@@ -31,6 +31,9 @@ Step 2. Find the last PS1 text file and replace it with this:
 PS1='[`date  +"%b-%d-%y %T"`] > '
 ```
 
+&nbsp;
+&nbsp;
+
 # Logging terminal input/output
 
 ## Option 1. Script 
@@ -60,7 +63,8 @@ Step 3. Select desired folder and file name
 Step 4. Select Always append to end of it
 Step 5. Deselect flush log file frequently and Omit fields. Select "Include Header"
 
-
+&nbsp;
+&nbsp;
 ## Specific tool logging - Metasploit
 
 Step 1. Check if this folder exists.
