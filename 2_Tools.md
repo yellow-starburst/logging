@@ -51,6 +51,25 @@ echo "export PATH=$GOPATH/bin:$GOROOT/bin:$PATH" >> ~/.zshrc
 ```
 
 
+## Virtual Enviornment Knowledge
+2 methods - virtualenv and poetry
+
+1. VirtualEnv
+
+```
+virtualenv venv
+source venv/bin/activate
+```
+
+2. Poetry
+
+```
+poetry install
+poetry shell
+```
+To run python files prepend `poetry run` to the command
+
+
 # AWS Pentest Tools
 
 1. Pacu
