@@ -1,4 +1,7 @@
 #                                         Linux logging
+
+<h1 align="center">Linux Logging</h1>
+
 &nbsp;
 &nbsp;
 # Time Stamping the Terminal
