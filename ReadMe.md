@@ -1,8 +1,6 @@
 # Linux logging
-
-\
-\
-
+&nbsp;
+&nbsp;
 # Time Stamping the Terminal
 ## Option 1. Modify ZSH - great for kali
 Step 1. Edit zhrc file
