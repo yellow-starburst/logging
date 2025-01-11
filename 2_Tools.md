@@ -1,4 +1,4 @@
-
+<h1 align="center">Basic Changes</h1>
 
 # 1. Change hostname
 1. `sudo nano /etc/hostname`
@@ -8,10 +8,11 @@
 
 # 2. Change Password
 
-1. Change username 
+1. Change username
+
 `passwd kali`
 
-2. Change root password
+4. Change root password
 
 `passwd root`
 
