@@ -54,9 +54,6 @@ git clone  https://github.com/aquasecurity/cloudsploit.git "/opt/$(basename -s .
 git clone  https://github.com/BishopFox/cloudfox.git "/opt/$(basename -s .git https://github.com/BishopFox/cloudfox.git)"
 git clone  https://github.com/nccgroup/ScoutSuite.git "/opt/$(basename -s .git https://github.com/nccgroup/ScoutSuite.git)"
 
-
-
-
 ```
 
 
