@@ -43,7 +43,13 @@ Problem - It needs a program like "aha" to convert the log files to readable tex
 
 Step 1. Either edit the bashrc or zshrc
 
-Step 2. Add this to the last line
+Step 2. Create log directory
+Note that you want to change the directory 
+```
+mkdir $HOME/logs
+```
+
+Step 3. Add this to the last line
 ```
 test "$(ps -ocommand= -p $PPID | awk '{print $1}')" == 'script' || (script -f $HOME/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)
 ```
