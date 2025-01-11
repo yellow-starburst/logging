@@ -45,18 +45,31 @@ echo "export PATH=$GOPATH/bin:$GOROOT/bin:$PATH" >> ~/.zshrc
 
 &nbsp;
 
+## Tool Download
+
+```
+git clone https://github.com/RhinoSecurityLabs/pacu.git "/opt/$(basename -s .git https://github.com/RhinoSecurityLabs/pacu.git)"
+git clone  https://github.com/prowler-cloud/prowler.git "/opt/$(basename -s .git https://github.com/prowler-cloud/prowler.git)"
+git clone  https://github.com/aquasecurity/cloudsploit.git "/opt/$(basename -s .git https://github.com/aquasecurity/cloudsploit.git)"
+git clone  https://github.com/BishopFox/cloudfox.git "/opt/$(basename -s .git https://github.com/BishopFox/cloudfox.git)"
+git clone  https://github.com/nccgroup/ScoutSuite.git "/opt/$(basename -s .git https://github.com/nccgroup/ScoutSuite.git)"
+
+
+
+
+```
+
+
 1. Pacu 
 
 ```
 apt-get install pacu
-
-git clone https://github.com/RhinoSecurityLabs/pacu.git -o /opt/
+git clone https://github.com/RhinoSecurityLabs/pacu.git "/opt/$(basename -s .git https://github.com/RhinoSecurityLabs/pacu.git)"
 ```
 
 2. Prowler
 ```
-pip3 install prowler
-git clone https://github.com/prowler-cloud/prowler
+git clone  https://github.com/prowler-cloud/prowler "/opt/$(basename -s .git https://github.com/prowler-cloud/prowler)"
 cd prowler
 apt-get install poetry
 poetry install
