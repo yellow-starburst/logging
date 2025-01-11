@@ -38,6 +38,7 @@ apt-get dist-upgrade
 ```
 apt install docker-cli -y
 apt-get install python3-poetry -y
+apt-get install pipx
 
 ```
 
@@ -52,7 +53,7 @@ echo "export PATH=$GOPATH/bin:$GOROOT/bin:$PATH" >> ~/.zshrc
 
 
 ## Virtual Enviornment Knowledge
-2 methods - virtualenv and poetry
+3 methods - virtualenv and poetry
 
 1. VirtualEnv
 
@@ -70,6 +71,12 @@ poetry shell
 To run python files prepend `poetry run` to the command
 
 
+3. Pipx - easiest
+
+```
+
+```
+
 # AWS Pentest Tools
 
 1. Pacu
@@ -80,7 +87,36 @@ To run python files prepend `poetry run` to the command
 
 &nbsp;
 
-## Tool Download
+
+## New Way
+
+Step 1. Install Tools
+```
+pipx install pacu
+pipx install prowler
+pipx install cloudsploit
+pipx install ScoutSuite
+```
+
+
+
+
+
+Step 2. Activate Tools 
+
+Step 3. Intall missing tools
+
+CloudFox
+
+```
+git clone  https://github.com/BishopFox/cloudfox.git "/opt/$(basename -s .git https://github.com/BishopFox/cloudfox.git)"
+cd cloudfox
+go build .
+```
+
+
+
+## Old-way Tool Download
 
 ```
 git clone https://github.com/RhinoSecurityLabs/pacu.git "/opt/$(basename -s .git https://github.com/RhinoSecurityLabs/pacu.git)"
@@ -96,7 +132,9 @@ git clone  https://github.com/nccgroup/ScoutSuite.git "/opt/$(basename -s .git h
 
 ```
 apt-get install pacu
-git clone https://github.com/RhinoSecurityLabs/pacu.git "/opt/$(basename -s .git https://github.com/RhinoSecurityLabs/pacu.git)"
+cd pacu
+python3 -m venv venv && source venv/bin/activate
+pip install -U pacu
 ```
 
 2. Prowler
@@ -105,7 +143,7 @@ git clone  https://github.com/prowler-cloud/prowler "/opt/$(basename -s .git htt
 cd prowler
 sudo poetry install
 poetry shell
-
+poetry run python prowler.py -v
 ```
 
 
