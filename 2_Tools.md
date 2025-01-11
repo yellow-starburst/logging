@@ -84,7 +84,7 @@ git clone https://github.com/RhinoSecurityLabs/pacu.git "/opt/$(basename -s .git
 ```
 git clone  https://github.com/prowler-cloud/prowler "/opt/$(basename -s .git https://github.com/prowler-cloud/prowler)"
 cd prowler
-poetry install
+sudo poetry install
 poetry shell
 
 ```
