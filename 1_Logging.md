@@ -54,10 +54,18 @@ Step 3. Add this to the last line
 test "$(ps -ocommand= -p $PPID | awk '{print $1}')" == 'script' || (script -f $HOME/$(date +"%d-%b-%y_%H-%M-%S")_shell.log)
 ```
 
-Step 3. Install this tool - it is useful to convert the log file to readable text
+Step 4. Install this tool - it is useful to convert the log file to readable text
 ```
 apt-get install aha -y
 ```
+
+Step 5. Read Log Files
+
+```
+cat *.zip | aha > log.html
+```
+
+Step 6. Open log file in any browser
 
 
 ## Option 2. Putty Logging
