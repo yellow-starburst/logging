@@ -124,6 +124,10 @@ cd cloudfox
 go build .
 ```
 
+Trivy
+```
+apt-get install trivy
+```
 
 
 ## Old-way Tool Download
