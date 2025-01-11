@@ -57,7 +57,7 @@ echo "spool /root/metasploit.log" > ~/.msf4/msfconsole.rc
 
 echo "setg prompt [%T] %L" >> ~/.msf4/msfconsole.rc
 
-echo setg PromptTimeFormat %m/%d/%Y %H:%M >> ~/.msf4/msfconsole.rc
+echo "setg PromptTimeFormat %m/%d/%Y %H:%M" >> ~/.msf4/msfconsole.rc
 
 echo "setg ConsoleLogging true" >> ~/.msf4/msfconsole.rc
 
