@@ -39,7 +39,9 @@ sudo apt-get dist-upgrade
 apt install docker-cli -y
 apt-get install python3-poetry -y
 apt-get install pipx
-
+apt-get install docker
+apt-get install docker.io
+apt-get install systemd-container
 ```
 
 ## Golang
@@ -96,6 +98,7 @@ pipx install prowler
 pipx install cloudsploit
 pipx install ScoutSuite
 pipx install trufflehog
+pipx install roadrecon
 ```
 
 
@@ -137,14 +140,14 @@ apt-get install trivy
 ```
 
 
+
 <h2 align="center"> Intall windows tools</h2>
 
 1. Azure_hound and bloodhound
-2. roadrecon - I'm not a big fan
-3. o365enum
-4. Scubagear - from cisa
-5. CrowdStrike Reporting Tool for Azure (CRT)
-6. AzureADRecon
+2. o365enum
+3. Scubagear - from cisa
+4. CrowdStrike Reporting Tool for Azure (CRT)
+5. AzureADRecon
 
 
 <br>
